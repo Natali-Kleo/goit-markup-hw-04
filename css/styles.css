@@ -46,7 +46,9 @@ body {
 
 header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px #2E2F42, 0px 1px 1px #2E2F42, 0px 1px 6px #2E2F42;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -131,7 +133,7 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    transition: color cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -139,7 +141,7 @@ header {
     color: #404bbf;
 }
 
-/* List of solutions */
+/* Business solutions */
 .business {
     background-color: #2e2f42;
     padding-top: 188px;
@@ -148,6 +150,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    max-width: 1440px;
 }
 
 .business-container {
@@ -184,6 +187,7 @@ header {
     min-width: 169px;
     cursor: pointer;
     height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .main-button:hover,
@@ -239,6 +243,7 @@ header {
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
+    border: 1px solid #8e8f99
 }
 
 .advantages-list-title {
@@ -446,6 +451,7 @@ header {
 .container-section-footer {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .footer-container {
